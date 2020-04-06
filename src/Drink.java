@@ -13,15 +13,14 @@ class Drink {
         System.out.println("\t1. " + ingredient1.name + " - " + ingredient1.amount + "ml");
         System.out.println("\t2. " + ingredient2.name + " - " + ingredient2.amount + "ml");
         System.out.println("\t3. " + ingredient3.name + " - " + ingredient3.amount + "ml");
+        System.out.println("Pojemność: " + sumIngredientsAmounts() + "ml");
         System.out.println("Zawiera alkohol: " + alcohol);
         System.out.println("Ocena: " + rating + "/10");
         System.out.println("Cena: " + price + "zł");
-
     }
 
-    void printAmount() {
-        int sum = ingredient1.amount + ingredient2.amount + ingredient3.amount;
-        System.out.println("Pojemność drinka: " + sum + "ml");
+    int sumIngredientsAmounts() {
+        return ingredient1.amount + ingredient2.amount + ingredient3.amount;
     }
 
 }
