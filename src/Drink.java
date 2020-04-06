@@ -7,7 +7,7 @@ class Drink {
     Ingredient ingredient2 = new Ingredient();
     Ingredient ingredient3 = new Ingredient();
 
-    void printInfo(){
+    void printInfo() {
         System.out.println("Drink " + name);
         System.out.println("Składniki: ");
         System.out.println("\t1. " + ingredient1.name + " - " + ingredient1.amount + "ml");
@@ -17,6 +17,11 @@ class Drink {
         System.out.println("Ocena: " + rating + "/10");
         System.out.println("Cena: " + price + "zł");
 
+    }
+
+    void printAmount() {
+        int sum = ingredient1.amount + ingredient2.amount + ingredient3.amount;
+        System.out.println("Pojemność drinka: " + sum + "ml");
     }
 
 }

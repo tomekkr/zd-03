@@ -14,6 +14,7 @@ public class Bar {
         drink1.rating = 7;
 
         drink1.printInfo();
+        drink1.printAmount();
 
     }
 }
